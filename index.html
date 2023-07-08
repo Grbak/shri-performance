@@ -123,7 +123,7 @@
             if (onSize) {
                 onSize({ width, height });
             }
-        });
+        }, [ref?.current?.offsetHeight, ref?.current?.offsetHeight]);
 
         return <li ref={ref} className={'event' + (props.slim ? ' event_slim' : '')}>
             <button className="event__button">
@@ -259,7 +259,7 @@
                 initedRef.current = true;
                 setActiveTab(new URLSearchParams(location.search).get('tab') || 'all');
             }
-        });
+        }, [activeTab, initedRef?.current]);
 
         const onSelectInput = event => {
             setActiveTab(event.target.value);
