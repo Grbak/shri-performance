@@ -1,3 +1,5 @@
+@import url("vendors/bootstrap.css");
+
 html {
     font-size: 100%;
     font-family: Arial, sans-serif;
@@ -273,7 +275,7 @@ html, body {
     display: flex;
     gap: 0.9375rem;
     height: 20.6875rem;
-    background: no-repeat 50% 50% url(assets/bg@2x.webp);
+    background: no-repeat 50% 50% url(assets/bg@2x.png);
     /*background-size: cover;*/
     background-size: 1260px;
     border-radius: 1.25rem;
@@ -465,7 +467,7 @@ html, body {
 }
 
 .event__icon_light {
-    background-image: url(assets/pizda2.svg#icon_sun);
+    background-image: url(assets/icon_sun.svg);
 }
 
 .event__icon_light2 {
@@ -473,8 +475,7 @@ html, body {
 }
 
 .event__icon_schedule {
-    /* background-image: url(assets/icon_scheduled.svg); */
-    background-image: url(assets/icons.svg#icon_list);
+    background-image: url(assets/icon_scheduled.svg);
 }
 
 .event__title {
